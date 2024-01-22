@@ -1,9 +1,9 @@
-import { Cover } from './components/Cover';
+import { Portfolio } from "./components/Portfolio";
 
 export default function Home() {
   return (
     <main>
-      <Cover />
+      <Portfolio />
     </main>
   );
 }
