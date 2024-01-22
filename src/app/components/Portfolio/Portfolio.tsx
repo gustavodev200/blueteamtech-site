@@ -3,7 +3,7 @@ import ProjectCard from "./components/ProjectCard";
 
 export const Portfolio: React.FC = () => {
   return (
-    <section className="w-full h-dvh bg-primary-900">
+    <section className="w-full h-full bg-primary-900">
       <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
         <header className="flex flex-col items-center">
           <h5 className="text-primary-300">PORTFOLIO</h5>
@@ -12,9 +12,15 @@ export const Portfolio: React.FC = () => {
           </h2>
         </header>
         <main className="mt-[3.75rem]">
-          <div className="grid grid-cols-2 gap-4 ">
-            <ProjectCard size="200px" />
-            <ProjectCard size="600px" />
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
+              <ProjectCard size="md" />
+              <ProjectCard size="lg" />
+            </div>
+            <div className="flex gap-4 justify-center mt-4">
+              <ProjectCard size="lg" />
+              <ProjectCard size="md" />
+            </div>
           </div>
         </main>
       </div>
