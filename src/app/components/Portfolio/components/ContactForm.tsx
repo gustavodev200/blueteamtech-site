@@ -43,6 +43,7 @@ const ContactForm = () => {
         <div className="flex gap-4">
           <input
             type="email"
+            required
             placeholder="Email"
             className="w-full h-14 outline-none border-solid border-[1px] border-primary-300 rounded-lg px-4"
             {...register("email", { required: true })}
@@ -64,13 +65,14 @@ const ContactForm = () => {
             <option value="Desenvolvimento Loja Online">
               Desenvolvimento Loja Online
             </option>
-            <option value="Desenvolvimento LandingPage">
-              Desenvolvimento LandingPage
+            <option value="Desenvolvimento Landing Page">
+              Desenvolvimento Landing Page
             </option>
           </select>
         </div>
 
         <textarea
+          required
           placeholder="Mensagem"
           className="mt-[1.625rem] w-full h-36 outline-none border-solid border-[1px] border-primary-300 rounded-lg p-4 resize-none"
           maxLength={500}
