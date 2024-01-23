@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./components/ProjectCard";
 import TitlePage from "./components/TitlePage";
 import DeveloperInfo from "./components/DeveloperInfo";
+import ContactForm from "./components/ContactForm";
 
 export const Portfolio: React.FC = () => {
   return (
@@ -45,6 +46,8 @@ export const Portfolio: React.FC = () => {
               />
             </div>
           </div>
+
+          <ContactForm />
         </main>
       </div>
     </section>
