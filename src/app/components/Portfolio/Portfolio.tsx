@@ -30,7 +30,7 @@ export const Portfolio: React.FC = () => {
                 "
               />
             </div>
-            <div className="flex gap-4 justify-center mt-4">
+            <div className="flex flex-col md:flex-row gap-4 justify-center mt-4">
               <ProjectCard
                 size="lg"
                 imageProjectURL="https://assets.materialup.com/uploads/b9639330-2c05-489d-9ace-1a92629f0e41/preview.jpg"
@@ -51,7 +51,7 @@ export const Portfolio: React.FC = () => {
           <div className="flex flex-col mt-12">
             <TitlePage text="Nosso time" />
 
-            <div className="flex justify-between">
+            <div className="flex justify-between md:flex-row flex-col  items-center">
               <DeveloperInfo
                 imageURL="/images/gustavo.png"
                 name="Gustavo Lage"

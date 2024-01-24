@@ -20,9 +20,9 @@ const ProjectCard = ({
   }[size];
   return (
     <div
-      className={`max-w-screen-sm ${sizeClass} h-[20rem] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-[#000]/30 rounded-lg`}
+      className={`max-w-screen-sm sm:${sizeClass} h-[20rem] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-[#000]/30 rounded-lg`}
     >
-      <div className={`w-full h-full`}>
+      <div className="w-full h-full">
         <img
           className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
           src={imageProjectURL}
