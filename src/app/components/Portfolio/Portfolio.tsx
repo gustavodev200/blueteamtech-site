@@ -3,14 +3,17 @@ import ProjectCard from "./components/ProjectCard";
 import TitlePage from "./components/TitlePage";
 import DeveloperInfo from "./components/DeveloperInfo";
 import ContactForm from "./components/ContactForm";
+import { ContactInfo } from "./components/ContactInfo";
 
 export const Portfolio: React.FC = () => {
   return (
     <section className="w-full h-full bg-primary-900">
       <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
         <header className="flex flex-col items-center">
-          <h5 className="text-primary-300">PORTFOLIO</h5>
-          <TitlePage text="Nossos Projetos" />
+          <h5 className="text-primary-300 ">PORTFOLIO</h5>
+          <h2 className="w-full text-center text-[#fff] font-bold text-4xl mt-5">
+            Nossos Projetos
+          </h2>
         </header>
         <main className="mt-[3.75rem]">
           <div className="flex flex-col">
@@ -73,6 +76,24 @@ export const Portfolio: React.FC = () => {
 
           <ContactForm />
         </main>
+      </div>
+      <div className="w-full h-full bg-primary-100">
+        <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
+          <div className="w-full flex mt-16">
+            <ContactInfo.Root>
+              <ContactInfo.Header icon="/images/phone.svg" title="TELEFONES" />
+              <div className="flex gap-5">
+                <ContactInfo.Text text="(62) 99999-9999" />
+                <ContactInfo.Text text="(62) 99999-9999" />
+                <ContactInfo.Text text="(62) 99999-9999" />
+              </div>
+            </ContactInfo.Root>
+            <ContactInfo.Root>
+              <ContactInfo.Header icon="/images/mail.svg" title="E-MAIL" />
+              <ContactInfo.Text text="blueteamtech.contato@gmail.com" />
+            </ContactInfo.Root>
+          </div>
+        </div>
       </div>
     </section>
   );
