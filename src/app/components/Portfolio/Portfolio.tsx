@@ -4,6 +4,8 @@ import TitlePage from "./components/TitlePage";
 import DeveloperInfo from "./components/DeveloperInfo";
 import ContactForm from "./components/ContactForm";
 import { ContactInfo } from "./components/ContactInfo";
+import { Footer } from "./components/Footer";
+import FooterLink from "./components/Footer/FooterLink";
 
 export const Portfolio: React.FC = () => {
   return (
@@ -79,10 +81,10 @@ export const Portfolio: React.FC = () => {
       </div>
       <div className="w-full h-full bg-primary-100">
         <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
-          <div className="w-full flex mt-16">
+          <div className="w-full flex flex-col md:flex-row  mt-16">
             <ContactInfo.Root>
               <ContactInfo.Header icon="/images/phone.svg" title="TELEFONES" />
-              <div className="flex gap-5">
+              <div className="flex gap-5 flex-col sm:flex-row">
                 <ContactInfo.Text text="(62) 99999-9999" />
                 <ContactInfo.Text text="(62) 99999-9999" />
                 <ContactInfo.Text text="(62) 99999-9999" />
@@ -92,6 +94,30 @@ export const Portfolio: React.FC = () => {
               <ContactInfo.Header icon="/images/mail.svg" title="E-MAIL" />
               <ContactInfo.Text text="blueteamtech.contato@gmail.com" />
             </ContactInfo.Root>
+          </div>
+
+          <div>
+            <Footer.Root>
+              <div>
+                <Footer.Title title="MENU" />
+                <div className="flex flex-col">
+                  <FooterLink navLink="Sobre" text="Sobre" />
+                  <FooterLink navLink="Serviços" text="Serviços" />
+                  <FooterLink navLink="Portfolio" text="Portfolio" />
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <Footer.SocialMedia
+                  icon="/images/github.svg"
+                  link="www.google.com.br"
+                />
+                <Footer.SocialMedia
+                  icon="/images/insta.svg"
+                  link="www.google.com.br"
+                />
+              </div>
+            </Footer.Root>
+            <Footer.RightsReserved />
           </div>
         </div>
       </div>
