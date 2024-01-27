@@ -8,6 +8,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      white: '#FFFFFF',
+      black: '#000000',
       'primary-100': '#BAD7EF',
       'primary-300': '#42B3FF',
       'primary-500': '#1780D9',
