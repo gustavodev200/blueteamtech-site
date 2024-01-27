@@ -75,8 +75,8 @@ export const Portfolio: React.FC = () => {
           </div>
         </main>
       </div>
-      <div className="w-full h-full bg-primary-100 pt-[224px] text-black">
-        <div className="w-full relative max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
+      <div className="w-full h-full bg-primary-100 pt-[224px] ">
+        <div className="w-full relative max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-black">
           <ContactForm />
           <div className="w-full flex flex-col md:flex-row  mt-16">
             <ContactInfo.Root>
