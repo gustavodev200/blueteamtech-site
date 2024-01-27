@@ -5,14 +5,16 @@ import React from "react";
 type CardProjectProps = {
   size: "md" | "lg";
   imageProjectURL: string;
-  description: string;
+  description?: string;
   title: string;
+  projectLink?: string;
 };
 const ProjectCard = ({
   size,
   imageProjectURL,
   description,
   title,
+  projectLink,
 }: CardProjectProps) => {
   const sizeClass = {
     md: "w-3/5",
@@ -20,7 +22,7 @@ const ProjectCard = ({
   }[size];
   return (
     <div
-      className={`max-w-screen-sm sm:${sizeClass} h-[20rem] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-[#000]/30 rounded-lg`}
+      className={`max-w-screen-sm ${sizeClass} max-[768px]:w-full h-[20rem] group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-[#000]/30 rounded-lg`}
     >
       <div className="w-full h-full">
         <img
@@ -37,9 +39,15 @@ const ProjectCard = ({
         <p className="mb-3 text-md italic text-[#FFF] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           {description}
         </p>
-        <button className="rounded-full bg-primary-500 py-2 px-3.5 font-com text-sm capitalize text-[#fff] shadow shadow-[#000]/60">
-          Ver Projeto
-        </button>
+        {projectLink && (
+          <a
+            href={projectLink}
+            target="__blank"
+            className="text-[#fff] bg-gradient-to-r from-primary-500 via-primary-500 to-primary-300 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+          >
+            Ver Projeto
+          </a>
+        )}
       </div>
     </div>
   );

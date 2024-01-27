@@ -37,10 +37,10 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="w-full h-[26rem] bg-[#fff] rounded-xl mt-16 p-[3rem] flex flex-col justify-center">
+    <div className="w-full h-auto bg-[#fff] md:rounded-lg p-[2rem] flex flex-col justify-center absolute top-[-438px] ">
       <h4 className="font-bold text-2xl">Entre em contato</h4>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full mt-[1.625rem]">
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-col md:flex-row">
           <input
             type="email"
             required
@@ -82,7 +82,7 @@ const ContactForm = () => {
         <div>
           <button
             type="submit"
-            className="w-full h-14 bg-primary-300 rounded-lg mt-[1.625rem] text-[#fff] font-bold"
+            className="w-full h-14 bg-primary-300 rounded-lg mt-[1.625rem] text-[#fff] font-bold hover:bg-primary-500"
             disabled={isSubmitting}
           >
             Enviar

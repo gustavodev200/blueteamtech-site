@@ -10,7 +10,7 @@ import FooterLink from "./components/Footer/FooterLink";
 export const Portfolio: React.FC = () => {
   return (
     <section className="w-full h-full bg-primary-900">
-      <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
+      <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white pb-[280px]">
         <header className="flex flex-col items-center">
           <h5 className="text-primary-300 ">PORTFOLIO</h5>
           <h2 className="w-full text-center text-[#fff] font-bold text-4xl mt-5">
@@ -22,33 +22,28 @@ export const Portfolio: React.FC = () => {
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <ProjectCard
                 size="md"
-                imageProjectURL="https://assets-global.website-files.com/5b5729421aca332c60585f78/61ba22cb34e6a120a2a61f6e_awayco-long-form-landing-page-example.png"
-                title="Hair Hub Barbershop"
-                description="Software desenvolvido como TCC simplifica o agendamento em barbearias, permitindo aos clientes escolher serviços, visualizar disponibilidade em tempo real e otimizar a gestão do tempo, com funcionalidades de cadastro e gerenciamento de clientes.
+                imageProjectURL="/images/mockup_site_odonto.png"
+                title="Odonto Clean"
+                description="Site foi projetado para proporcionar uma experiência informativa e amigável aos pacientes, garantindo que todos os visitantes encontrem as informações necessárias sobre nossos serviços e equipe dedicada.
                 "
+                projectLink="https://odonto-clean-beige.vercel.app/"
               />
               <ProjectCard
                 size="lg"
-                imageProjectURL="https://elementor.com/marketing/wp-content/uploads/sites/9/2021/02/Landing-Page-Introduction-Post-Blog-Post-Assets_3-02.png"
-                title="Hair Hub Barbershop"
-                description="Software desenvolvido como TCC simplifica o agendamento em barbearias, permitindo aos clientes escolher serviços, visualizar disponibilidade em tempo real e otimizar a gestão do tempo, com funcionalidades de cadastro e gerenciamento de clientes.
-                "
+                imageProjectURL="/images/breve.png"
+                title="Em breve..."
               />
             </div>
             <div className="flex flex-col md:flex-row gap-4 justify-center mt-4">
               <ProjectCard
                 size="lg"
-                imageProjectURL="https://assets.materialup.com/uploads/b9639330-2c05-489d-9ace-1a92629f0e41/preview.jpg"
-                title="Hair Hub Barbershop"
-                description="Software desenvolvido como TCC simplifica o agendamento em barbearias, permitindo aos clientes escolher serviços, visualizar disponibilidade em tempo real e otimizar a gestão do tempo, com funcionalidades de cadastro e gerenciamento de clientes.
-                "
+                imageProjectURL="/images/breve.png"
+                title="Em breve..."
               />
               <ProjectCard
                 size="md"
-                imageProjectURL="https://www.uscreen.tv/wp-content/uploads/2021/04/landing-pages.png"
-                title="Hair Hub Barbershop"
-                description="Software desenvolvido como TCC simplifica o agendamento em barbearias, permitindo aos clientes escolher serviços, visualizar disponibilidade em tempo real e otimizar a gestão do tempo, com funcionalidades de cadastro e gerenciamento de clientes.
-                "
+                imageProjectURL="/images/breve.png"
+                title="Em breve..."
               />
             </div>
           </div>
@@ -61,33 +56,35 @@ export const Portfolio: React.FC = () => {
                 imageURL="/images/gustavo.png"
                 name="Gustavo Lage"
                 skills="Desenvolvedor/Designer"
+                about="https://www.linkedin.com/in/gustavo-lage/"
               />
               <DeveloperInfo
                 imageURL="/images/lucas.png"
                 name="Lucas Fonseca"
                 skills="Desenvolvedor/Designer"
+                about="https://www.linkedin.com/in/lucasofon/"
               />
 
               <DeveloperInfo
                 imageURL="/images/joao.png"
                 name="João Victor"
                 skills="Desenvolvedor/Designer"
+                about="https://www.linkedin.com/in/jo%C3%A3o-victor-rodrigues-6808431b7/"
               />
             </div>
           </div>
-
-          <ContactForm />
         </main>
       </div>
-      <div className="w-full h-full bg-primary-100">
-        <div className="w-full max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
+      <div className="w-full h-full bg-primary-100 pt-[224px] ">
+        <div className="w-full relative max-w-[1170px] h-full flex flex-col py-10 justify-center mx-auto text-white">
+          <ContactForm />
           <div className="w-full flex flex-col md:flex-row  mt-16">
             <ContactInfo.Root>
               <ContactInfo.Header icon="/images/phone.svg" title="TELEFONES" />
               <div className="flex gap-5 flex-col sm:flex-row">
-                <ContactInfo.Text text="(62) 99999-9999" />
-                <ContactInfo.Text text="(62) 99999-9999" />
-                <ContactInfo.Text text="(62) 99999-9999" />
+                <ContactInfo.Text text="(62) 98532-0242" />
+                <ContactInfo.Text text="(62) 98519-3471" />
+                <ContactInfo.Text text="(62) 98154-2871" />
               </div>
             </ContactInfo.Root>
             <ContactInfo.Root>
@@ -109,11 +106,11 @@ export const Portfolio: React.FC = () => {
               <div className="flex gap-4">
                 <Footer.SocialMedia
                   icon="/images/github.svg"
-                  link="www.google.com.br"
+                  link="https://github.com/blueteamtechoficial"
                 />
                 <Footer.SocialMedia
                   icon="/images/insta.svg"
-                  link="www.google.com.br"
+                  link="https://www.instagram.com/blue_team_tech/"
                 />
               </div>
             </Footer.Root>

@@ -5,7 +5,7 @@ type ContactTextProps = {
 };
 
 const ContactText = ({ text }: ContactTextProps) => {
-  return <div className="mt-5 ">{text}</div>;
+  return <div className="mt-5 font-bold">{text}</div>;
 };
 
 export default ContactText;
