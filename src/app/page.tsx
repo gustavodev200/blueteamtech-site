@@ -1,9 +1,10 @@
-import { Cover } from './components/Cover';
+import { AboutServices } from "./components/AboutServices";
 
 export default function Home() {
   return (
     <main>
-      <Cover />
+      {/* <Cover /> */}
+      <AboutServices />
     </main>
   );
 }
