@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const businessItems = [
@@ -18,9 +19,9 @@ const businessItems = [
 export const ForYourBusiness: React.FC = () => {
   return (
     <>
-      <div className="flex justify-between">
-        <div className="mt-[10rem]">
-          <h5 className="uppercase text-primary-600 mb-[1.25rem]">
+      <div className="flex justify-between flex-col md:flex-row items-center mt-[5rem] mb-[5rem]">
+        <div className="w-full">
+          <h5 className="uppercase text-primary-600 tracking-widest mb-5">
             para o seu negócio
           </h5>
           <div className="text-start w-full max-w-[32rem]">
@@ -41,7 +42,7 @@ export const ForYourBusiness: React.FC = () => {
           </div>
         </div>
         <img
-          className="max-w-full mt-[9rem]"
+          className="max-w-full flex items-center"
           src="/images/Startup life-amico 1.svg"
           alt="img-desenvolvendo"
         />

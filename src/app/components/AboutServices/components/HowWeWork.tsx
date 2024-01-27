@@ -3,11 +3,12 @@ import React from "react";
 export const HowWeWork: React.FC = () => {
   return (
     <>
-      <div className="mb-[70px] ">
-        <h5 className="uppercase text-primary-600">Como nós trabalhamos</h5>
-        <div className="flex justify-between">
+      <div className="mb-[70px]">
+        <div className="flex justify-between flex-col md:flex-row items-center">
           <div className=" w-full text-start max-w-[450px]">
-            {" "}
+            <h5 className="uppercase text-primary-600 tracking-widest mb-5">
+              Como nós trabalhamos
+            </h5>
             <h3 className="font-bold text-[2.5rem] mb-[31px]">
               Fazemos seu projeto do seu jeito
             </h3>

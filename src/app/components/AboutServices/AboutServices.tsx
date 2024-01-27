@@ -2,6 +2,8 @@ import React from "react";
 import { About } from "./components/About";
 import { HowWeWork } from "./components/HowWeWork";
 import { ForYourBusiness } from "./components/ForYourBusiness";
+import { Services } from "./components/Services";
+import { ContactUs } from "./components/ContactUs";
 
 export const AboutServices: React.FC = () => {
   return (
@@ -9,6 +11,8 @@ export const AboutServices: React.FC = () => {
       <About />
       <HowWeWork />
       <ForYourBusiness />
+      <Services />
+      <ContactUs />
     </section>
   );
 };

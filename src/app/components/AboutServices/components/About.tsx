@@ -1,18 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 export const About: React.FC = () => {
   return (
-    <div className="w-full flex justify-between items-center mb-[111px]">
+    <div className="w-full flex flex-col md:flex-row justify-between items-center mb-[111px] mt-[5rem]">
       <img
-        className="max-w-full h-auto"
+        className="max-w-full "
         src="/images/Programming-amico 1.svg"
         alt="img-desenvolvendo-htm-css-c++"
       />
       <div className="w-full max-w-[500px]">
-        <h5 className=" uppercase tracking-widest mb-5 text-primary-600 ">
+        <h5 className=" uppercase tracking-widest text-primary-600 mb-5">
           Sobre
         </h5>
-        <h2 className="text-4xl font-bold text-[3.5rem] mb-[26px] ">
+        <h2 className="text-5xl font-bold mb-[26px] ">
           Um time de <span className=" text-primary-500">Devs</span> capacitados
         </h2>
         <p className="text-primary-900 font-bold mb-[18px]">
