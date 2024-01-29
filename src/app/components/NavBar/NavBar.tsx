@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import useScrollToAnchor from "@/hooks/useScrollToAnchor";
@@ -57,7 +58,7 @@ export const NavBar: React.FC = () => {
         </button>
       </div>
 
-      <Image
+      <img
         src="/logo.svg"
         alt="Logo"
         width={114}
