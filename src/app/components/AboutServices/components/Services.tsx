@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export const Services = () => {
   return (
-    <section className="mb-[7rem]">
+    <section className="mb-[7rem]" id="services">
       <header>
         <h5 className="uppercase text-primary-600 tracking-widest mb-7">
           Serviços

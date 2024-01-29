@@ -1,9 +1,9 @@
-import React from 'react';
-import { Illustration } from './components/Illustration';
+import React from "react";
+import { Illustration } from "./components/Illustration";
 
 export const Cover: React.FC = () => {
   return (
-    <section className="w-full h-dvh bg-primary-900">
+    <section className="w-full h-dvh bg-primary-900" id="home">
       <div className="w-full max-w-[1170px] h-full flex items-center justify-between px-4 mx-auto text-white max-[900px]:flex-col-reverse max-[900px]:justify-center">
         <div className="w-full max-w-[735px]">
           <h6 className="mb-6 font-normal text-primary-300 max-[900px]:text-sm">
@@ -12,7 +12,7 @@ export const Cover: React.FC = () => {
 
           <h1 className="max-[900px]:text-3xl">
             Nós ajudamos <span className="text-primary-500">você</span> a
-            construir o projeto dos{' '}
+            construir o projeto dos{" "}
             <span className="text-primary-500">seus sonhos</span>!
           </h1>
 

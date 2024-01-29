@@ -37,7 +37,10 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="w-full h-auto bg-[#fff] md:rounded-lg p-[2rem] flex flex-col justify-center absolute top-[-438px] ">
+    <div
+      className="w-full h-auto bg-[#fff] md:rounded-lg p-[2rem] flex flex-col justify-center absolute top-[-438px] "
+      id="contact"
+    >
       <h4 className="font-bold text-2xl">Entre em contato</h4>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full mt-[1.625rem]">
         <div className="flex gap-4 flex-col md:flex-row">

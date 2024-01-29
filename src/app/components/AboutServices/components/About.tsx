@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React from "react";
 
 export const About: React.FC = () => {
   return (
-    <div className="w-full flex flex-row justify-between items-center mb-[111px] mt-[5rem] max-[1000px]:flex-col">
+    <div
+      className="w-full flex flex-row justify-between items-center mb-[111px] mt-[5rem] max-[1000px]:flex-col"
+      id="about"
+    >
       <img
         className="max-w-full"
         src="/images/Programming-amico 1.svg"

@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import useScrollToAnchor from "@/hooks/useScrollToAnchor";
 import React from "react";
 
 type FooterLinkProps = {
@@ -7,10 +9,16 @@ type FooterLinkProps = {
 };
 
 const FooterLink = ({ text, navLink }: FooterLinkProps) => {
+  const scrollToAnchor = useScrollToAnchor();
   return (
-    <Link href={navLink} className="text-sm mb-2">
+    <span
+      onClick={() => {
+        scrollToAnchor(navLink);
+      }}
+      className="text-sm mb-2 cursor-pointer hover:underline"
+    >
       {text}
-    </Link>
+    </span>
   );
 };
 

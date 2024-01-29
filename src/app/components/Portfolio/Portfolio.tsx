@@ -98,9 +98,9 @@ export const Portfolio: React.FC = () => {
               <div>
                 <Footer.Title title="MENU" />
                 <div className="flex flex-col">
-                  <FooterLink navLink="Sobre" text="Sobre" />
-                  <FooterLink navLink="Serviços" text="Serviços" />
-                  <FooterLink navLink="Portfolio" text="Portfolio" />
+                  <FooterLink navLink="#about" text="Sobre" />
+                  <FooterLink navLink="#services" text="Serviços" />
+                  <FooterLink navLink="#portfolio" text="Portfolio" />
                 </div>
               </div>
               <div className="flex gap-4">

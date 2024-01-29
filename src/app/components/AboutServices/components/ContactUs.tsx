@@ -1,8 +1,11 @@
-import Image from 'next/image';
+"use client";
+import useScrollToAnchor from "@/hooks/useScrollToAnchor";
+import Image from "next/image";
 
 export const ContactUs = () => {
+  const scrollToAnchor = useScrollToAnchor();
   return (
-    <div className="w-full bg-primary-300 rounded-lg relative mt-72 mb-52 p-20 max-[1000px]:pt-[18.75rem] max-[1000px]:px-8 max-[380px]:pt-[10rem]">
+    <div className="w-full bg-primary-300 rounded-lg relative mt-72 mb-52 p-20 max-[1000px]:pt-[18.75rem] max-[1000px]:px-8 max-[380px]:pt-[10rem] ">
       <Image
         src="/images/svg-contact-us.svg"
         alt="img-contact-us"
@@ -19,7 +22,12 @@ export const ContactUs = () => {
         Nós ajudamos o seu negócio a decolar!
       </h4>
 
-      <button className="text-[#fff] bg-gradient-to-r font-bold from-primary-500 via-primary-500 to-primary-600 hover:bg-gradient-to-br focus:outline-none  rounded-lg text-sm px-5 py-3 text-center transition-all duration-200 ease-in-out">
+      <button
+        onClick={() => {
+          scrollToAnchor("#contact");
+        }}
+        className="text-[#fff] bg-gradient-to-r font-bold from-primary-500 via-primary-500 to-primary-600 hover:bg-gradient-to-br focus:outline-none  rounded-lg text-sm px-5 py-3 text-center transition-all duration-200 ease-in-out"
+      >
         FALE CONOSCO
       </button>
     </div>
