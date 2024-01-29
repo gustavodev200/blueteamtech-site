@@ -59,7 +59,7 @@ export const NavBar: React.FC = () => {
       </div>
 
       <img
-        src="/Logo.svg"
+        src="/logo.svg"
         alt="Logo"
         width={114}
         height={50}
